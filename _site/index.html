@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>OmniHorizon</title>
+    <link rel="stylesheet" href="https://fonts.google.com/noto/specimen/Noto+Serif">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Playfair+Display">
+    <link rel="stylesheet" href="https://unpkg.com/reasonable-colors@0.4.0/reasonable-colors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel='stylesheet' href='styles.css'/>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+  </head>
+  <body>
+
+    <div class="sticky">
+        <div class='menu-container'>
+          <div class='menu'>
+              <div class='logo'><p>OMNIHORIZON</p></div>
+                  <div class="links">
+                      <div class='login'><button class="button"><a href="#sectionA">Home</a></div></button>
+                      <div class='login'><button class="button"><a href="#sectionB">Features</a></div></button>
+                      <div class='login'><button class="button"><a href="#sectionC">Dataset</a></div></button>
+                      <div class='login'><button class="button"><a href="#sectionD">Benchmarks</a></div></button>
+                      <div class='login'><button class="button"><a href="#sectionE">Results</a></div></button>
+                      <div class='login'><button class="button"><a href="#sectionF">Download</a></div></button>
+                  </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- <a > Home</a> -->
+    <div class='header-container'>
+        <div class='header'>
+          <div class="heading">
+            <p class="heading-title" id = "sectionA">OmniHorizon</p>
+            <p class="secondary-heading">An Outdoors Omnidirectional Dataset for Depth and
+              Normal Estimation</p>
+            <br> 
+          <div class="authors">
+            <p class="author1">Jay Bhanushali<br>
+            </p>
+            <p class="author2">Manivannan M.<br>
+            </p>
+            <p class="institute">Touchlab,
+            Department of Applied Mechanics,<br>
+            Indian Institute of Technology Madras,<br>
+            Chennai - 600036 </p>
+          </div>
+          </div>
+      
+            <h3>Abstract</h3><br><br>
+          <div class="heading-text border-elem">
+            <p>A lot of work has been done in recent years towards the tasks of monocular depth
+            and surface normal estimation from omnidirectional images. However, the work
+            has been largely restricted to indoor datasets. We propose a synthetic
+            stereo-omnidirectional dataset: OmniHorizon with 25K images for depth and
+            normal estimation in outdoor scenarios. The dataset provides a wider
+            context for scenery such as buildings, streets and vegetation. The dataset also
+            accounts for dynamic lighting in the scene, pedestrians and traffic. We demonstrate
+            the results from the network trained on the OmniHorizon on real world images. </p>
+          </div>
+          <br><br>
+            <img class="img-container" src="images\teaser-figure.png"> <br>
+        </div>
+      </div>
+    </div>
+    
+    <p class="separator secondary-heading" id="sectionB">Features of the OmniHorizon</p>
+    <div class='photo-grid-container' >
+        <div class='photo-grid'>
+            <div class='photo-grid-item item card'>
+              <!-- <div class="card_header"> -->
+                <img src='images/one.svg'/>
+              <!-- </div> -->
+            
+              <div class="card_container">
+                <p>January 1, 2021</p>
+              </div>
+                
+            </div>
+            <div class='photo-grid-item card'>
+                <img src='images/two.svg'/>
+                <div class="card_container">
+                  <p>Test description of the feature</p>
+                </div>
+            </div>
+            <div class='photo-grid-item card'>
+                <img src='images/three.svg'/>
+                <div class="card_container">
+                  <p>Dynamic lighting</p>
+                </div>
+            </div>
+            <div class='photo-grid-item card'>
+                <img src='images/four.svg'/>
+              </div>
+              <div class='photo-grid-item last-item card'>
+                <img src='images/five.svg'/>
+              </div>              
+        </div>
+    </div>
+
+    <div class="header-container">
+      <div class="heading">
+        <p class="separator section-heading" id = "sectionC">Results on Real world images in the wild</p>
+        <div class='container'>
+          <img class="img-container" src="images\realworld-results_with_labels.png">
+        </div>
+      </div>
+    </div>
+
+
+        <div class="glider-contain multiple">
+          <p class="separator section-heading" id="sectionE">Results on the Real world images in the wild</p>
+          <button class="glider-prev">
+            <i class="fa fa-chevron-circle-left"></i>
+          </button>
+          <div class="glider">
+            <figure>
+             <img src='images\realworld-results_slide1.png'/>
+             <!-- <figcaption>First image</figcaption>  -->
+            </figure>
+            <figure>
+             <img src='images\realworld-results_slide1.png'/>
+             
+            </figure>
+            <figure>
+             <img src='images\realworld-results_slide1.png'/>
+            </figure>
+            <figure>
+             <img src='images/four.svg'/>
+            </figure>
+            <figure>
+             <img src='images/five.svg'/>
+            </figure>
+          </div>
+          <button class="glider-next">
+           <i class="fa fa-chevron-circle-right"></i>
+         </button>
+  
+         <div id="dots" class="glider-dots"> </div>
+     </div>
+    
+    
+      
+
+
+  </body>
+
+<script>
+  new Glider(document.querySelector('.glider'), {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: '#dots',
+    draggable: false,
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    }
+  });
+</script> 
+</html>

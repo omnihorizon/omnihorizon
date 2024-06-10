@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>OmniHorizon</title>
+    <link rel="stylesheet" href="https://unpkg.com/reasonable-colors@0.4.0/reasonable-colors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.css">
+    <link rel='stylesheet' href='css\styles.css'/>
+  </head>
+  <body>
+
+    <div class="sticky">
+        <div class='menu-container'>
+          <div class='menu'>
+              <div class='logo'><p>OMNIHORIZON</p></div>
+                  <div class="links">
+                      <div class='login'><button class="button"><a href="#sectionA">Home</a></div></button>
+                      <div class='login'><button class="button"><a href="#sectionB">Dataset</a></div></button>
+                      <div class='login'><button class="button"><a href="#sectionC">Features</a></div></button>
+                      <div class='login'><button class="button"><a href="#sectionD">Benchmarks</a></div></button>
+                      <div class='login'><button class="button"><a href="#sectionE">Results</a></div></button>
+                      <div class='login'><button class="button"><a href="#sectionF">Download</a></div></button>
+                  </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- <a > Home</a> -->
+    <div class='header-container'>
+        <div class='header'>
+          <div class="heading">
+            <p class="secondary-heading" id = "sectionA">Cross-Domain Synthetic-to-Real In-the-Wild <br>
+                                         Depth and Normal Estimation for 3D Scene Understanding
+                          </p>
+
+          
+          <div class="authors">
+            <p class="author1">Jay Bhanushali <sup>1</sup> <br> </p>
+
+            <p class="author2">Manivannan M <sup>1</sup> <br> </p>
+            
+            <p class="author3">Praneeth Chakravarthula <sup>2</sup> <br> </p>
+
+          </div>
+          <div class="institutes"> 
+            <p class="institute1">
+              <sup>1</sup> Indian Institute of Technology Madras<br>
+            </p>
+            <p class="institute2">
+              <sup>2</sup> UNC Chapel Hill
+            </p>
+          </div>
+          <div class="authors">
+            <p class="author1"> OmniCV 2024 | <mark class="red">Best Paper Award</mark></p>
+          </div>
+          </div>
+      
+            <h3 style="margin-top: 25px;">Abstract</h3><br><br>
+          <div class="heading-text border-elem">
+            <p>We present a cross-domain inference technique that learns from synthetic data to estimate depth and normals 
+              for in-the-wild omnidirectional 3D scenes encountered in real-world uncontrolled settings.
+              To this end, we introduce UBotNet, an architecture that combines UNet and Bottleneck Transformer elements 
+              to predict consistent scene normals and depth.
+              We also introduce the OmniHorizon synthetic dataset containing 24,335 omnidirectional images that represent 
+              a wide variety of outdoor environments, including buildings, streets, and diverse vegetation. 
+              This dataset is generated from expansive, lifelike virtual spaces and encompasses dynamic scene elements, 
+              such as changing lighting conditions, different times of day, pedestrians, and vehicles. 
+              Our experiments show that UBotNet achieves significantly improved accuracy in depth estimation and normal estimation 
+              compared to existing models. 
+              Lastly, we validate cross-domain synthetic-to-real depth and normal estimation on real outdoor images using 
+              UBotNet trained solely on our synthetic OmniHorizon dataset, demonstrating the potential of both the synthetic dataset
+              and the proposed network for real-world scene understanding applications.</p>
+          </div>
+          <br><br>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="glider-contain">
+      <!-- <div class="heading"> -->
+        <p class="separator section-heading" id="sectionB" >Dataset</p>
+        <div class='container'>
+          <img class="img-container" src="images\dataset_overview.png"> <br>
+        </div>
+        <div class="heading-text">
+          <p>OmniHorizon dataset was generated using Unreal Engine 4, featuring color images, scene depth, 
+            and world normals in a top-bottom (stereo) format, all rendered at 1024 x 512 resolution.
+            The dataset provides 24,335 omnidirectional views for various outdoor scenarios which includes 
+            parks, market, traffic junction, underpass, uneven terrain, buildings, vehicles and pedestrians.</p>
+        </div>
+      <!-- </div> -->
+    </div>
+
+    <div class="glider-contain">
+    <p class="separator secondary-heading" id="sectionC">Features of the OmniHorizon</p>
+  </div>
+
+    <div class='photo-grid-container' >
+        <div class='photo-grid'>
+            <div class='photo-grid-item item card'>
+              <!-- <div class="card_header"> -->
+                <img src='images/feature-1.png'/>
+              <!-- </div> -->
+            
+              <div class="card_container">
+                <p>Outdoors Scenarios</p>
+              </div>
+                
+            </div>
+            <div class='photo-grid-item card'>
+                <img src='images/feature-2.png'/>
+                <div class="card_container">
+                  <p>Dynamic Lighting</p>
+                </div>
+            </div>
+            <div class='photo-grid-item card'>
+                <img src='images/feature-3.png'/>
+                <div class="card_container">
+                  <p>Vehicles</p>
+                </div>
+            </div>
+            <div class='photo-grid-item card'>
+                <img src='images/feature-4.png'/>
+                <div class="card_container">
+                  <p>Virtual avatars</p>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div div id="glider-1" class="glider-contain multiple">
+        <p class="separator section-heading" id="sectionD">Benchmarks</p>
+        <button class="glider-prev">
+          <i class="fa fa-chevron-circle-left"></i>
+        </button>
+        <div class="glider">
+          <figure>
+            <img src='images\quantitative_results.png'/>
+          </figure>
+
+          <figure>
+          <img src='images\qualitative_results.png'/>
+          </figure>
+        </div>
+        <button class="glider-next">
+        <i class="fa fa-chevron-circle-right"></i>
+      </button>
+
+      <div id="dots" class="glider-dots"> </div>
+      <p >Quantitative and qualitative results for benchmark on OmniHorizon. Check paper and supplementary material for complete details.</p>
+  </div>
+  
+  <div div id="glider-2" class="glider-contain multiple">
+    <p class="separator section-heading" id="sectionE">Results on Real world images in the wild</p>
+    <button class="glider-prev">
+      <i class="fa fa-chevron-circle-left"></i>
+    </button>
+    <div class="glider">
+      
+      <figure>
+        <img src='images\image-set-1.png'/>
+      </figure>
+
+      <figure>
+        <img src='images\image-set-2.png'/>
+      </figure>
+      
+      <figure>
+        <img src='images\image-set-3.png'/>
+      </figure>
+
+      <figure>
+        <img src='images\image-set-4.png'/>
+      </figure>
+
+      <figure>
+        <img src='images\image-set-5.png'/>
+      </figure>
+      
+      <figure>
+        <img src='images\image-set-6.png'/>
+      </figure>
+
+    </div>
+    <button class="glider-next">
+    <i class="fa fa-chevron-circle-right"></i>
+  </button>
+
+  <div id="dots" class="glider-dots"> </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.js"></script>
+
+  <script src="./src/index.js"></script>
+
+ <div class = "glider-contain">
+  <p class="separator section-heading" id="sectionF">Download</p>
+
+  <div class="container">
+  <div class="xtic-img-container">
+    <img src="images/xtic-logo.png" class="xtic-img" >
+    <img src="images/iitm-logo.png" class="iitm-img" >
+    <img src="images/unc-logo.png" class="iitm-img" >
+  </div>
+  <p class="download-text"> OmniHorizon dataset was developed by the team at Touchlab, IIT Madras. <br>
+    <br> The work is supported by XTIC (eXperiential Technology Innovation Centre) </p>
+  </div>
+  <p style="align-content: center; padding-left: 30px;"> Kindly use the below links to access the corresponding resources:</p>
+  <div class="project-icons">
+  <a href="https://arxiv.org/abs/2212.05040" target="_blank" rel="noopener noreferrer">
+    <i class="fa fa-file fa-2xl"></i> <br> <br>
+    Paper<br> (arXiv)
+  </a>
+
+  <a href="" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-github fa-2xl"></i> <br> <br>
+    Code <br> Coming Soon!!
+</a>
+
+<a href="" target="_blank" rel="noopener noreferrer">
+  <i class="fa fa-database fa-2xl"></i> <br> <br>
+  Dataset <br> Coming Soon!!
+</a>
+</div>
+<p>If you find our work useful, please consider citing：</p>
+<pre class="w3-panel w3-leftbar w3-light-grey" style="white-space: pre-wrap; font-family: monospace;">
+  <p>@article{omnihorizon,
+  title={Cross-Domain Synthetic-to-Real In-the-Wild Depth and Normal Estimation for 3D Scene Understanding},
+  author={Bhanushali, Jay and Chakravarthula, Praneeth and Muniyandi, Manivannan},
+  journal={arXiv preprint arXiv:2212.05040},
+  year={2024}
+}
+</p>
+</pre>
+ </div> 
+
+  </body>
+  
+</html>
