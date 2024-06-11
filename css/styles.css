@@ -268,10 +268,9 @@ html {
 }
 
 .author1 {
-  font-size: 30px;
   /* padding: 0 0px 0 0px; */
   /* margin-right: 10px; */
-  /* grid-column: 1 / span 3; */
+  grid-column: 1 / span 3;
 }
 .author2 {
   /* margin-left: 10px; */
@@ -284,7 +283,7 @@ html {
 }
 
 .institutes {
-  display: flex;
+  display: grid;
   justify-content: space-evenly;
   text-align: center;
   font-size: medium;
@@ -294,12 +293,11 @@ html {
 
 
 .institute1 {
-  font-size: 30px;
-  /* grid-column: 1 / span 3; */
+  grid-column: 1 / span 3;
 }
 
 .institute2 {
-  font-size: 30px;
+  grid-column: 4 / span 3;
 }
 
 .separator {
@@ -535,7 +533,43 @@ figure.item {
     display:none;
   }
 
-  .authors{
-    display: inline;
+  .authors {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: medium;
+    margin: 0px 0 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .author1 {
+    /* padding: 0 0px 0 0px; */
+    /* margin-right: 10px; */
+    font-size: 24px;
+  }
+  .author2 {
+    font-size: 24px;
+  }
+  
+  .author3 {
+    font-size: 24px;
+  }
+
+  .institutes {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: medium;
+    margin: 0px 0 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  .institute1 {
+    font-size:24px;
+  }
+  
+  .institute2 {
+    font-size:24px;
   }
 }
