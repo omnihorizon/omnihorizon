@@ -258,6 +258,9 @@ html {
   line-height: 1.6;
   max-width: 1050px;
 }
+
+
+
 .authors {
   display: flex;
   justify-content: space-evenly;
