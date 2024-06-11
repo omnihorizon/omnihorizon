@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+
 mark.red {
   color:#ff0000;
   background: none;
@@ -156,11 +157,7 @@ html {
   /* border: solid 2px #030303; */
   font-weight: bold;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
-  /* color: #0e0e0e; */
-  /* background: #54779f ; */
-  /* background: var(--color-azure-4); */
-  /* background: #244670 ; */
-  padding: 10px 40px ;
+  padding: 10px 20px ;
   border-radius: 5px;
   display: inline-block;
 }
@@ -350,7 +347,7 @@ h3 {
 }
 
 .button {
-  margin: 10px;
+  margin: 10px 5px;
   vertical-align: middle;
   display: inline-block;
 }
@@ -378,7 +375,7 @@ p {
   padding: 0px 10px 20px 10px;
   margin: 1vw 0vw 3vw 0vw;
   /* border: 5px #333; */
-  width: 1200px;
+  width: 100%;
   /* max-width:960px; */
 }
 
@@ -474,7 +471,7 @@ figure figcaption {
 }
 
 .photo-grid {
-  width: 90%;
+  width: 100%;
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -488,7 +485,7 @@ figure figcaption {
 }
 
 .card {
-  width: 300px;
+  width: 23%;
   padding: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
@@ -529,4 +526,14 @@ figure.item {
 .caption {
   /* Make the caption a block so it occupies its own line. */
   display: block;
+}
+
+@media only screen and (max-width: 1023px) {
+  .sticky {
+    display:none;
+  }
+
+  .authors{
+    display: inline;
+  }
 }
