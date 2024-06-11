@@ -12,6 +12,7 @@ gliders.forEach((glide) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     draggable: false,
+    rewind: true,
     dots: gliderDots,
     arrows: {
       prev: gliderPrev,
